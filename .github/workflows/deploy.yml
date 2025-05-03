@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main # Deploy automatically on push to main branch
-  workflow_dispatch: # Allows manual trigger from GitHub UI
+  workflow_dispatch: # Allows manual deployment from GitHub UI
 
 jobs:
   build-and-deploy:
@@ -16,14 +16,23 @@ jobs:
         with:
           ref: main
 
-      - name: Setup Node.js and pnpm
+      - name: Setup Node.js and enable Corepack
         uses: actions/setup-node@v4
         with:
-          node-version: 'latest'
-          cache: 'pnpm'
+          node-version: '23.11.0' # Using specific Node.js version
+          cache: 'pnpm' # Enable dependency caching
+
+      - name: Enable pnpm using Corepack
+        run: corepack enable && corepack prepare pnpm@latest --activate
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+
+      - name: Verify pnpm installation
+        run: pnpm --version
+
+      - name: Debug PATH
+        run: echo $PATH && which pnpm
 
       - name: Build VitePress
         run: pnpm run docs:build
