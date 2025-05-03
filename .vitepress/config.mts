@@ -7,10 +7,6 @@ export default defineConfig({
 
   // Configure localization
   locales: {
-    root: {
-      label: 'English',
-      lang: 'en'
-    },
     zh: {
       label: '中文',
       lang: 'zh-CN',
