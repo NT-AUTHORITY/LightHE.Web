@@ -20,7 +20,7 @@ hero:
 features:
   - title: 6ms Ping
     details: Ping is 6ms with Radmin!
-  - title: 16GB RAM + i7 CPU
+  - title: 16GB RAM + i7 CPU 
     details: For better performance!
   - title: Via Support
     details: For better compatibility!
@@ -31,11 +31,4 @@ features:
   - title: 200ms ping
     details: So don't use the public IP if you are using Windows PC...
 ---
-
-<div style="text-align: center; margin-top: 20px;">
-  <p>
-    <a href="/en/">English</a> |
-    <a href="/zh/">中文</a>
-  </p>
-</div>
 
