@@ -19,7 +19,7 @@ hero:
 
 features:
   - title: 6ms Ping
-    details: Ping is 6ms with punlic IP!
+    details: Ping is 6ms with Radmin!
   - title: 16GB RAM + i7 CPU 
     details: For better performance!
   - title: Via Support
