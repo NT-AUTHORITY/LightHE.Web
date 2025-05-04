@@ -4,8 +4,10 @@ outline: deep
 
 # Server Info
 
-The current server version is **1.21.4**.  
-Loader: **Purpur**.  
+The current server version is **1.21.4**.
+
+Loader: **Purpur**.
+
 Server Seed: **-3348364080835440825**
 
 ## About Purpur
